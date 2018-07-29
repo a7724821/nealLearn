@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>js函数测试</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<style>
+		
+	</style>
+</head>
+<body>
+	<script>
+		function findLongestWord(str){
+			 var str = str.split(" ");
+			 var array = [];
+			 for(var i in str){
+				array.push(str[i].length);
+			 }
+			var longest = Math.max.apply(Math,array);
+			return longest;
+		}
+		
+		console.log(findLongestWord('The quick brown fox jumped over the lazy dog'));
+		
+	</script>
+</body>
+</html>
